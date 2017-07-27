@@ -1,0 +1,24 @@
+-----------------------
+###       TODO      ###
+-----------------------
+
+1------------------------
+
+Create services for auth
+Refactorise api routes and app.js
+
+------------------------
+###       IDEAS      ###
+------------------------
+
+1------------------------
+
+Subscribe to specific event types for a device
+ex: subscribe to device (id:x, event='LocationChanged')
+If the event field is not set, then the subscription will be done on all the device events
+websocket rooms will be composed of n (= EventType numbers) rooms
+
+2------------------------
+
+Add user profiles and allow them to create locations
+Link the devices to the user

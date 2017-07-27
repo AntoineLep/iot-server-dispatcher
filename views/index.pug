@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div(class='row')
+    div(class='col col-xs-6')
+      p
+        input(type='text', name='token', id='token', size=50)
+        button(type='button', id='connect') Connect
+        br
+        br
+        input(type='text', name='subscribe_id', id='subscribe_id', size=50)
+        button(type='button', id='subscribe') Subscribe
+        br
+        br
+        input(type='text', name='unsubscribe_id', id='unsubscribe_id', size=50)
+        button(type='button', id='unsubscribe') Unsubscribe
+        br
+        br
+        input(type='text', name='device_service_id', id='device_service_id', size=50)
+        span devId
+        br
+        input(type='text', name='device_service_service', id='device_service_service', size=50)
+        span service
+        br
+        input(type='text', name='device_service_args', id='device_service_args', size=50)
+        span args
+        br
+        button(type='button', id='device_service') Device_service
+    div(class='col col-xs-6')
+      ul(class='list-group', id='event-list')
+  script(src='/javascripts/websocket-connect.js')
